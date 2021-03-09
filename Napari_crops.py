@@ -117,7 +117,9 @@ pathList=[]
 
 pathList.append(r"C:/Data/ECAS_cohort/2021_01_29")
 
-
+#Searches for files in "pathList" which are .czi. 
+#These are set to "working_file" and are named "folder_name" to mark them with case number.
+#make_crops is run on these .czi files, giving crops in case-named folders.
 for i in range(len(pathList)):
     path=pathList[i]
     for root, dirs, files in os.walk(path):
